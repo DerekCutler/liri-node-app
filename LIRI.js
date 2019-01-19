@@ -14,7 +14,7 @@ require("dotenv").config();
 
 // Link to keys.JS
 let keys = require("./keys.js");
-console.log(process.env)
+// console.log(process.env)
 // DONE:  npm install --save node-spotify-api
 let Spotify = require("node-spotify-api");
 
@@ -59,7 +59,6 @@ function liriRun() {
     case "movie-this":
       getOMDB(userSearch);
       break;
-
   }
 }
 
@@ -68,10 +67,9 @@ liriRun();
 
 
 // START SPOTIFY FUNCTION
-
 function getSpotify(songName) {
   // Spotify API stuff
-  console.log("K: " + JSON.stringify(keys));
+  // console.log("JSON.stringify(keys): " + JSON.stringify(keys));
   let spotify = new Spotify(keys.spotify);
 
   if (!songName) {
@@ -99,7 +97,11 @@ function getSpotify(songName) {
 
     // Append to log.txt
     let logSong = "\n======= Start Spotify Log Entry =======" +
-      "\nArtist: " + data.tracks.items[0].album.artists[0].name + "\nSong: " + data.tracks.items[0].name + "\nAlbum: " + data.tracks.items[0].album.name + "\nPreview Link: " + data.tracks.items[0].href + "\n=======  End Spotify Log Entry =======\n"
+      "\nArtist: " + data.tracks.items[0].album.artists[0].name +
+      "\nSong: " + data.tracks.items[0].name +
+      "\nAlbum: " + data.tracks.items[0].album.name +
+      "\nPreview Link: " + data.tracks.items[0].href +
+      "\n======= End Spotify Log Entry =======\n"
 
     fs.appendFile("log.txt", logSong, function (err) {
       if (err) throw err;
@@ -114,6 +116,10 @@ function getSpotify(songName) {
 // START BANDS IN TOWN FUNCTION
 
 function getBandsInTown(artist) {
+  // Default Artist is Clutch
+  if (!artist) {
+    artist = "Clutch";
+  }
   let bandQueryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
 
   axios.get(bandQueryURL).then(
@@ -124,12 +130,17 @@ function getBandsInTown(artist) {
       console.log("Artist: " + artist + "\r\n");
       console.log("Venue: " + response.data[0].venue.name + "\r\n");
       console.log("City: " + response.data[0].venue.city + "\r\n");
-      console.log("Date: " + moment(response.data[0].datetime).format("MM-DD-YYYY") + "\r\n");
+      console.log("Date: " + moment(response.data[0].datetime).format("MM/DD/YYYY") + "\r\n");
       // Line break for ease of differentiating
       console.log("======= End Bands In Town Log Entry =======");
 
       // Append to log.txt
-      let logConcert = "======= Start Bands In Town Log Entry =======" + "\nArtist: " + artist + "\nVenue: " + response.data[0].venue.name + "\nCity: " + response.data[0].venue.city + "\nDate: " + moment(response.data[0].datetime).format("MM-DD-YYYY") + "\n======= End Bands In Town Log Entry ======="
+      let logConcert = "\n======= Start Bands In Town Log Entry =======" +
+        "\nArtist: " + artist +
+        "\nVenue: " + response.data[0].venue.name +
+        "\nCity: " + response.data[0].venue.city +
+        "\nDate: " + moment(response.data[0].datetime).format("MM-DD-YYYY") +
+        "\n======= End Bands In Town Log Entry =======\n"
 
       fs.appendFile("log.txt", logConcert, function (err) {
         if (err) throw err;
@@ -141,13 +152,52 @@ function getBandsInTown(artist) {
 
 // END BANDS IN TOWN FUNCTION
 
+// START OMDB FUNCTION
 
+function getOMDB(movie) {
+  // console.log("Movie: " + movie)
+  // Default Move is the Empire Strikes Back
+  if (!movie) {
+    movie = "the Empire Strikes Back";
+  }
+  let movieQueryURL = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
+  // console.log("movieQueryURL: " + movieQueryURL)
 
+  axios.get(movieQueryURL).then(
+    function (response) {
+      // Line break for ease of differentiating
+      // console.log(response)
+      console.log("======= Start Online Movie DataBase Log Entry =======");
+      // log response
+      console.log("Title: " + response.data.Title + "\r\n");
+      console.log("Year Released: " + response.data.Year + "\r\n");
+      console.log("IMDB Rating: " + response.data.imdbRating + "\r\n");
+      console.log("Rotten Tomatos Rating: " + response.data.Ratings[1].Value + "\r\n");
+      console.log("Country Where Produced: " + response.data.Country + "\r\n");
+      console.log("Language: " + response.data.Language + "\r\n");
+      console.log("Plot: " + response.data.Plot + "\r\n");
+      console.log("Actors: " + response.data.Actors + "\r\n");
+      // Line break for ease of differentiating
+      console.log("======= End Online Movie DataBase Log Entry =======");
 
+      // Append to log.txt
+      let logMovie = "\n======= Start Online Movie Database Log Entry =======" +
+        "\nTitle: " + response.data.Title +
+        "\nYear Released: " + response.data.Year +
+        "\nIMDB Rating: " + response.data.imdbRating +
+        "\nRotten Tomatos Rating: " + response.data.Ratings[1].Value +
+        "\nCountry Where Produced: " + response.data.Country +
+        "\nLanguage: " + response.data.Language +
+        "\nPlot: " + response.data.Plot +
+        "\nActors: " + response.data.Actors +
+        "\n======= End Online Movie Database Log Entry =======\n"
 
+      fs.appendFile("log.txt", logMovie, function (err) {
+        if (err) throw err;
+      });
 
+    });
+};
 
-
-
-
+// END OMDB FUNCTION
 
