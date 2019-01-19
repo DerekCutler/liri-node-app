@@ -1,27 +1,21 @@
-===
-Language Interpretation and Recognition Interface (LIRI)
-=
-A Node.js Command Line Interface (CLI)
-===
+# Language Interpretation and Recognition Interface (LIRI) - a Node.JS Command Line Interface Application
 
-===
-CLI Requirements:
-=
+To install these npm packages, cd into the folder, then run 
+
+```
 npm install 
-===
+```
 
-===
-Commands to run LIRI
-=
-Follow the format presented in these queries:
-=
-$ node liri.js spotify-this-song <SONG GOES HERE>
-$ node liri.js concert-this <BAND GOES HERE>
-$ node liri.js movie-this <MOVIE GOES HERE>
-===
+### Commands to run LIRI
 
-===
-API Credential site(s):
-=
+```
+$ node liri.js spotify-this-song '<song name here>'
+$ node liri.js concert-this '<band name here>'
+$ node liri.js movie-this '<movie name here>'
+```
+
+
+
+### API Credential site(s)
+
 Spotify: https://developer.spotify.com/my-applications/
-===
