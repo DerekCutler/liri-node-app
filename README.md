@@ -1,25 +1,28 @@
-# liri-node-app
+=======
+===
+Language Interpretation and Recognition Interface (LIRI)
+===
+A Node.js Command Line Interface (CLI)
+=======
 
-# Liri - a node application
-
-To install these npm packages, cd into the folder, then run 
-
-```
+=======
+CLI Requirements:
+===
 npm install 
-```
+=======
 
-### Commands to run LIRI
+=======
+Commands to run LIRI
+===
+Follow the format presented in these queries:
+===
+$ node liri.js spotify-this-song <SONG GOES HERE>
+$ node liri.js concert-this <BAND GOES HERE>
+$ node liri.js movie-this <MOVIE GOES HERE>
+=======
 
-Follow the format presented in these queries
-```
--node liri.js song '<song name here>'
--node liri.js band '<band name here>'
--node liri.js movie '<movie name here>'
-```
-
-
-### API Credential sites
-
+=======
+API Credential site(s):
+===
 Spotify: https://developer.spotify.com/my-applications/
-
-OMDb API: http://www.omdbapi.com/apikey.aspx
+=======
