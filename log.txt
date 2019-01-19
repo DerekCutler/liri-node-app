@@ -1,0 +1,30 @@
+======= Start Spotify Log Entry =======
+Artist: Ozzy Osbourne
+Song: Crazy Train - Remastered
+Album: Blizzard of Ozz (Expanded Edition)
+APreview Link: https://api.spotify.com/v1/tracks/2b9lp5A6CqSzwOrBfAFhof
+=======  End Spotify Log Entry =======
+======= Start Spotify Log Entry =======
+Artist: Ozzy Osbourne
+Song: Crazy Train - Remastered
+Album: Blizzard of Ozz (Expanded Edition)
+APreview Link: https://api.spotify.com/v1/tracks/2b9lp5A6CqSzwOrBfAFhof
+=======  End Spotify Log Entry =======
+======= Start Bands In Town Log Entry =======
+Artist: slayer
+Venue: Brisbane Riverstage 
+City: Brisbane
+Date: 03-07-2019
+======= End Bands In Town Log Entry =======
+======= Start Spotify Log Entry =======
+Artist: Luke Combs
+Song: Beautiful Crazy
+Album: This One's for You Too (Deluxe Edition)
+Preview Link: https://api.spotify.com/v1/tracks/2rxQMGVafnNaRaXlRMWPde
+=======  End Spotify Log Entry =======
+======= Start Bands In Town Log Entry =======
+Artist: clutch
+Venue: The Senate
+City: Columbia
+Date: 02-19-2019
+======= End Bands In Town Log Entry =======
