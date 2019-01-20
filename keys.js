@@ -1,4 +1,4 @@
-console.log("keys.js is go");
+// console.log("keys.js is go");
 
 // Targets API authentication info from .env file and exporting so liri.js can utilize 
 

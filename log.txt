@@ -1,0 +1,61 @@
+
+======= Start Spotify Log Entry =======
+Artist: Clutch
+Song: When Vegans Attack
+Album: From Beale Street to Oblivion
+Preview Link: https://api.spotify.com/v1/tracks/1gdmt9nv4g5IZliYcWzasu
+======= End Spotify Log Entry =======
+
+======= Start Spotify Log Entry =======
+Artist: Led Zeppelin
+Song: When The Levee Breaks
+Album: Led Zeppelin IV (Deluxe Edition)
+Preview Link: https://api.spotify.com/v1/tracks/05f8Hg3RSfiPSCBQOtxl3i
+======= End Spotify Log Entry =======
+
+======= Start Bands In Town Log Entry =======
+Artist: Machine Head
+Venue: STARS TO THE RESCUE
+City: Walnut Creek
+Date: 01-26-2019
+======= End Bands In Town Log Entry =======
+
+======= Start Bands In Town Log Entry =======
+Artist: Clutch
+Venue: The Senate
+City: Columbia
+Date: 02-19-2019
+======= End Bands In Town Log Entry =======
+
+======= Start Online Movie Database Log Entry =======
+Title: Swingers
+Year Released: 1996
+IMDB Rating: 7.3
+Rotten Tomatos Rating: 87%
+Country Where Produced: USA
+Language: English
+Plot: Wannabe actors become regulars in the stylish neo-lounge scene; Trent teaches his friend Mike the unwritten rules of the scene.
+Actors: Jon Favreau, Vince Vaughn, Ron Livingston, Patrick Van Horn
+======= End Online Movie Database Log Entry =======
+
+======= Start Online Movie Database Log Entry =======
+Title: Star Wars: Episode IV - A New Hope
+Year Released: 1977
+IMDB Rating: 8.6
+Rotten Tomatos Rating: 93%
+Country Where Produced: USA
+Language: English
+Plot: Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.
+Actors: Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
+======= End Online Movie Database Log Entry =======
+
+======= Start Online Movie Database Log Entry =======
+Title: Star Wars: Episode V - The Empire Strikes Back
+Year Released: 1980
+IMDB Rating: 8.8
+Rotten Tomatos Rating: 95%
+Country Where Produced: USA
+Language: English
+Plot: After the rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader.
+Actors: Mark Hamill, Harrison Ford, Carrie Fisher, Billy Dee Williams
+======= End Online Movie Database Log Entry =======

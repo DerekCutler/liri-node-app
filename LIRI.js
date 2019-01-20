@@ -35,11 +35,11 @@ let moment = require("moment");
 
 // Arguments Input 
 let appCommand = process.argv[2];
-console.log("appCommand: " + appCommand);
+// console.log("appCommand: " + appCommand);
 
 // USE SLICE FOR SEARCH STARTING WITH INDEX 3 OR MORE
 let userSearch = process.argv.slice(3).join(" ");
-console.log("userSearch: " + userSearch);
+// console.log("userSearch: " + userSearch);
 
 // END appCommand LINE STUFF
 
@@ -200,4 +200,3 @@ function getOMDB(movie) {
 };
 
 // END OMDB FUNCTION
-
